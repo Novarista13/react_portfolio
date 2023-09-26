@@ -8,10 +8,13 @@ import Contact from './components/Contact';
 import Socials from './components/Socials';
 import Footer from './components/Footer';
 import ParticlesComponent from './decorations/Particle';
+import { animateScroll as scroll } from "react-scroll";
 
 function App() {
+  
   return (
     <div className="app">
+      {scroll.scrollToTop()}
       <ParticlesComponent />
       <Nav />
       <Canvas />

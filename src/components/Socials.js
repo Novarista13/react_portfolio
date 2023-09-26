@@ -31,7 +31,7 @@ export default function Socials() {
             <li className="social-icons">
               <FaInstagram
                 onClick={() => {
-                  window.open("https://www.instagram.com/novarista_13/");
+                  window.open("https://www.instagram.com/novarista_13");
                 }}
               />
             </li>

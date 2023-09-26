@@ -11,23 +11,24 @@ export default function TextForm() {
     >
       <Form.Label className="form-title"> Contact me: </Form.Label>
         <Form.Control
-          className="form-input"
+          className="form--input"
           type="email"
           required=""
+          name="name"
           placeholder="Your name"
           autoFocus=""
         />
         <Form.Control
-          className="form-input"
+          className="form--input"
           type="email"
-          name="_replyto"
           required=""
+          name="email"
           placeholder="Your email"
         />
         <Form.Control
-          className="form-input"
-          name="message"
+          className="form--input"
           required=""
+          name="message"
           placeholder="Type your message"
           as="textarea"
           rows={7}

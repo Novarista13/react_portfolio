@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer-section">
       This Website was coded by{" "}
       <span
-        style={{ color: "#61DAFB" }}
+        style={{ color: "#61DAFB", cursor: "pointer" }}
         onClick={() => {
           window.open("https://github.com/Novarista13");
         }}

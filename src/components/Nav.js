@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.css";
+import {animateScroll as scroll} from "react-scroll";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -27,6 +28,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Toggle
+          className="ms-auto"
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
@@ -37,11 +39,13 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto" defaultActiveKey="#hero">
             <Nav.Item>
               <Nav.Link
-                href="#hero-section"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                  scroll.scrollToTop();
+                }}
               >
                 Home
               </Nav.Link>
@@ -50,7 +54,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 href="#about-section"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
               >
                 About
               </Nav.Link>
@@ -59,7 +65,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 href="#work-section"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
               >
                 Works
               </Nav.Link>
@@ -68,7 +76,9 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 href="#contact-section"
-                onClick={() => updateExpanded(false)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
               >
                 Contact
               </Nav.Link>

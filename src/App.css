@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -107,9 +107,6 @@
     display: none !important;
   }
 }
-.navbar-brand {
-  color: rgb(250, 250, 250) !important;
-}
 
 .navbar-nav .nav-link {
   color: white !important;
@@ -119,11 +116,13 @@
 
 .nav-link {
   padding: 0.8rem 1rem !important;
+  text-align: unset !important;
 }
 
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
+    text-align: center !important;
   }
 }
 
@@ -199,7 +198,7 @@ div .introduction {
 }
 
 div .hero-section {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .introduction-hi {
@@ -220,14 +219,22 @@ div .hero-section {
   font-size: 1.8em;
 }
 
+@media (max-width: 1000px) {
+   .hero-container {
+    max-width: min-content !important;
+  }
+} 
+
+@media (max-width: 520px) {
+  .hero-gif {
+    width: 400px;
+  }
+}
+
 /* About Section */
 
 .about-section {
-  padding-left: 80px;
-}
-
-#about-section {
-  margin: 100px 50px;
+  padding: 0 30px;
 }
 
 div .about-text {
@@ -253,7 +260,7 @@ div .about-text {
 /* Work Section */
 
 #work-section {
-  margin: 100px 50px;
+  margin: 100px auto;
 }
 
 div .work-title {
@@ -279,8 +286,26 @@ div .works {
 .miniworks {
   background: white !important;
   color: black !important;
-  padding: 30px;
+  padding: 20px;
 }
+
+.miniwork-image {
+  margin-bottom: 5px;
+  border-radius: 25px;
+}
+
+@media (min-width: 992px) {
+  .miniwork-image {
+    height: 200px;
+  }
+} 
+
+@media (max-width: 768px) {
+  .miniwork-image {
+    height: 250px;
+  }
+}
+
 
 /* Contact Section */
 
@@ -292,7 +317,7 @@ div .works {
   font-size: 1.8em
 }
 
-.form-input {
+.form--input {
   border-radius: 20px !important;
   margin-bottom: 20px;
 }
