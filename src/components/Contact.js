@@ -18,9 +18,9 @@ export default function Contact() {
             height="450"
             title="location-map"
             style={{ border: 0, borderRadius: "20px" }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </Col>
       </Row>

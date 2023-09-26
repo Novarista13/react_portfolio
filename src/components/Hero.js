@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
 export default function Hero() {
-
   return (
     <>
       <Container className="app-container" id="hero-section">

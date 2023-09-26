@@ -1,56 +1,62 @@
 import React from "react";
-import Particles from "react-tsparticles";
+import { useCallback, useMemo } from "react";
+import Particles from "react-particles";
 
-function Particle() {
-  return (
-    <Particles
-      id="tsparticles"
-      params={{
-        particles: {
-          number: {
-            value: 160,
-            density: {
+import { loadFull } from "tsparticles";
+
+const ParticlesComponent = (props) => {
+  const options = useMemo(() => {
+
+  return ( {
+          particles: {
+            number: {
+              value: 60,
+              density: {
+                enable: true,
+                area: 1500,
+              },
+            },
+            links: {
               enable: true,
-              area: 1500,
+              opacity: 0.02,
+            },
+            move: {
+              direction: "right",
+              speed: 0.05,
+            },
+            size: {
+              value: 1,
+            },
+            opacity: {
+              anim: {
+                enable: true,
+                speed: 1,
+                value: 0.05,
+              },
             },
           },
-          links: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 0.05,
-          },
-          size: {
-            value: 1,
-          },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.05,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+            },
+            modes: {
+              push: {
+                quantity: 1,
+              },
             },
           },
-        },
-        interactivity: {
-          events: {
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              quantity: 1,
-            },
-          },
-        },
-        detectRetina: true,
-      }}
-    />
-  );
+        })
+     }, []);
+
+  const particlesInit = useCallback((engine) => {
+  loadFull(engine);
+  // loadFull(engine); // for this sample the slim version is enough, choose whatever you prefer, slim is smaller in size but doesn't have all the plugins and the mouse trail feature
+}, []);
+
+  return <Particles id="tsparticles" init={particlesInit} options={options} />;
 }
 
-
-export default Particle;
+export default ParticlesComponent;

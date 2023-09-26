@@ -5,16 +5,22 @@ import About from './components/About';
 import Nav from './components/Nav';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Socials from './components/Socials';
+import Footer from './components/Footer';
+import ParticlesComponent from './decorations/Particle';
 
 function App() {
   return (
     <div className="app">
+      <ParticlesComponent />
       <Nav />
       <Canvas />
       <Hero />
       <About />
       <Work />
       <Contact />
+      <Socials />
+      <Footer />
     </div>
   );
 }

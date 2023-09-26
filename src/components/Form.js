@@ -15,7 +15,7 @@ export default function TextForm() {
           type="email"
           required=""
           placeholder="Your name"
-          autofocus=""
+          autoFocus=""
         />
         <Form.Control
           className="form-input"
@@ -23,7 +23,6 @@ export default function TextForm() {
           name="_replyto"
           required=""
           placeholder="Your email"
-          autofocus=""
         />
         <Form.Control
           className="form-input"
