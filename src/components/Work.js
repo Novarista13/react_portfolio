@@ -10,7 +10,7 @@ import { worksText } from "../decorations/works/WorksText";
 export default function Work() {
   return (
     <>
-      <div id="work-section" style={{ marginTop: "100px", opacity: "0" }}>
+      <div id="work-section" style={{ margin: "100px", opacity: "0" }}>
         to make navlink does not go over the component
       </div>
       <Container>

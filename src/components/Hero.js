@@ -23,7 +23,6 @@ export default function Hero() {
               width={500}
               className="hero-gif"
               src={require("../images/hero1.gif")}
-              style={{background: "transparent"}}
               alt="not found"
             />
           </Col>
