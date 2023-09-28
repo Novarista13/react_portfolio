@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       <Container className="hero-container" id="hero-section">
         <Row className="hero-section">
-          <Col lg={6} sm={12} className="introduction">
+          <Col xl={7} lg={6} sm={12} className="introduction">
             <div className="introduction-hi">
               Hi, There <span className="wave">👋🏻</span>
             </div>
@@ -18,11 +18,11 @@ export default function Hero() {
             </div>
             <Text />
           </Col>
-          <Col lg={6} sm={12} className="hero-img">
+          <Col className="hero-img">
             <img
-              width={500}
+              width={470}
               className="hero-gif"
-              src={require("../images/hero1.gif")}
+              src={require("../images/hero2.gif")}
               alt="hero"
             />
           </Col>

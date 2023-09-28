@@ -227,10 +227,7 @@
 
 div .introduction {
   padding-left: 80px;
-}
-
-div .hero-section {
-  margin-top: 30px;
+  padding-top: 50px;
 }
 
 .introduction-hi {
@@ -278,6 +275,13 @@ div .hero-img {
 .about-section {
   padding: 0 30px;
 }
+
+@media (max-width: 520px)  {
+  .about-photo {
+    width: 100%;
+  }
+}
+
 
 div .about-text {
   box-shadow: #11111a1a 0 4px 16px,#11111a1a 0 8px 24px,#11111a1a 0 16px 56px;
