@@ -23,7 +23,7 @@ export default function Hero() {
               width={500}
               className="hero-gif"
               src={require("../images/hero1.gif")}
-              alt="not found"
+              alt="hero"
             />
           </Col>
         </Row>

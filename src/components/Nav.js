@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.css";
-import {animateScroll as scroll} from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -42,6 +42,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#hero">
             <Nav.Item>
               <Nav.Link
+                title="hero"
                 onClick={() => {
                   updateExpanded(false);
                   scroll.scrollToTop();
@@ -53,6 +54,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                title="about"
                 href="#about-section"
                 onClick={() => {
                   updateExpanded(false);
@@ -64,6 +66,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                title="work"
                 href="#work-section"
                 onClick={() => {
                   updateExpanded(false);
@@ -75,6 +78,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                title="contact"
                 href="#contact-section"
                 onClick={() => {
                   updateExpanded(false);
