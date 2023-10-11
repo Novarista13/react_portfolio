@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Marquee from "react-fast-marquee";
-import { skillsData } from "../decorations/Skills/SkillsData";
-import { skillsImage } from "../decorations/Skills/SkillsImage";
+import { skillsData } from "../data/Skills/SkillsData";
+import { skillsImage } from "../data/Skills/SkillsImage";
 
 export default function About() {
   return (

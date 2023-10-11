@@ -6,6 +6,7 @@ import weatherold from "../../images/works/weatherold.png";
 import weathernew from "../../images/works/weathernew.png"
 import webpage from "../../images/works/webpage.png";
 import portfolioold from "../../images/works/portfolioold.png";
+import coffeeReview from "../../images/works/coffee-review.png";
 
 export const worksImage = (work) => {
   const workID = work.toLowerCase();
@@ -18,11 +19,13 @@ export const worksImage = (work) => {
       return dashboard;
     // case "usermanage":
     //   return usermanage;
-    case "weatherold":
+    case "js weather website":
       return weatherold;
-    case "weathernew":
+    case "react weather webiste":
       return weathernew;
-    case "portfolioold":
+    case "coffee review website":
+      return coffeeReview;
+    case "old portfolio":
       return portfolioold;
     case "webpage":
       return webpage;

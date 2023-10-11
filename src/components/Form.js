@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 
 export default function TextForm() {
   return (
@@ -34,9 +33,9 @@ export default function TextForm() {
         rows={7}
       />
       <div className="text-center">
-        <Button type="submit" className="form-button">
+        <button type="submit" className="form-button">
           Send
-        </Button>
+        </button>
       </div>
     </Form>
   );

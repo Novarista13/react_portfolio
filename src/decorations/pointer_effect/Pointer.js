@@ -36,7 +36,7 @@ function Dot({ position, opacity }) {
       style={{
         position: "sticky",
         zIndex: 1,
-        backgroundColor: "#61DAFB",
+        backgroundColor: "#7EB5EB",
         borderRadius: "50%",
         opacity,
         transformOrigin: "100% 100%",

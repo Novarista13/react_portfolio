@@ -10,7 +10,7 @@ export default function Socials() {
       <Row>
         <Col md={12}>
           <h5>
-            Feel free to <span style={{ color: "#61DAFB" }}>connect</span> with
+            Feel free to <span style={{ color: "#7EB5EB" }}>connect</span> with
             me
           </h5>
           <ul className="social-links">
