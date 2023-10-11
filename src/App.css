@@ -351,14 +351,20 @@ div .works {
 }
 
 .modal-link-button {
-  margin: 0 15px;
+  margin: 0 10px;
+}
+
+@media (max-width: 320px) {
+  .modal-link-button {
+    margin: 5px!important;
+  }
 }
 
 button {
   border: 0 !important;
   padding: 5px 10px;
   border-radius: 10px !important;
-  background: #7eb5eb ;
+  background: #7eb5eb;
   color: rgb(27 20 41) !important;
 }
 
@@ -407,7 +413,6 @@ button {
   border-radius: 20px !important;
   margin-bottom: 20px;
 }
-
 
 /* socials */
 
