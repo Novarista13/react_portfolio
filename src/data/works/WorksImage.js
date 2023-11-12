@@ -1,12 +1,12 @@
-import chocolate from "../../images/works/chocolate.png";
-import chocolatecard from "../../images/works/chocolatecard.png";
+import chocolate from "../../images/works/chocolate.jpg";
+import chocolatecard from "../../images/works/chocolatecard.jpg";
 import dashboard from "../../images/works/dashboard.png";
 // import usermanage from "../../images/works/usermanage.png";
-import weatherold from "../../images/works/weatherold.png";
-import weathernew from "../../images/works/weathernew.png"
-import webpage from "../../images/works/webpage.png";
+import weatherold from "../../images/works/weatherold.jpg";
+import weathernew from "../../images/works/weathernew.jpg";
+import webpage from "../../images/works/webpage.jpg";
 import portfolioold from "../../images/works/portfolioold.png";
-import coffeeReview from "../../images/works/coffee-review.png";
+import coffeeReview from "../../images/works/coffee-review.jpg";
 
 export const worksImage = (work) => {
   const workID = work.toLowerCase();
