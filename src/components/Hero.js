@@ -3,6 +3,7 @@ import Text from "../decorations/TypeText";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import pdf from "../images/May Thit Htun.pdf";
 
 export default function Hero() {
   return (
@@ -17,6 +18,14 @@ export default function Hero() {
               I'M <span className="my-name">MAY THIT HTUN</span>
             </div>
             <Text />
+            <a
+              className="nav-link mt-3"
+              style={{ position: "absolute" }}
+              href={pdf}
+              download="MayThitHtun.pdf"
+            >
+              <button className="work-modal-button">Download CV</button>
+            </a>
           </Col>
           <Col xl={5} lg={6} md={6} className="hero-img">
             <img

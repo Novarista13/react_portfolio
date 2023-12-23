@@ -28,6 +28,11 @@ export const worksText = (work) => {
     case "webpage":
       return "By utilizing HTML for structuring and CSS for styling, I carefully curated accessibility across various devices.";
 
+    case "jewelry shop website":
+      return `I am proud to showcase my meticulously crafted jewelry shop project, a testament to my skills in web development. Leveraging the power of React and the versatile styling capabilities of Bootstrap, I have created an immersive and visually stunning online shopping experience. From elegant designs to seamless navigation, my project offers users a captivating journey through a curated collection of exquisite jewelry pieces.\n\nContributors: \n  Front End: May Thit Htun\n  BackEnd: Moe Phyu Sin Maung`;
+
+    case "small erp system":
+      return "I am excited to present my accomplished ERP system project with my team, a testament to my proficiency in developing robust and scalable solutions. Utilizing React and Bootstrap, I have meticulously designed and implemented an efficient Enterprise Resource Planning system that streamlines processes and enhances business management.From seamless data management to integrated modules for various business functions, my project showcases a harmonious blend of technology and usability.\n\nContributors: Me and My Team";
     default:
       break;
   }

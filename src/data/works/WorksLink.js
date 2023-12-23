@@ -8,6 +8,10 @@ export const demoLink = (work) => {
       return "https://dashing-dolphin-5b27ce.netlify.app/";
     case "coffee review website":
       return "https://coffeenova-corner.netlify.app/home";
+    case "jewelry shop website":
+      return "";
+    case "small erp system":
+      return "";
     case "old portfolio":
       return "https://gleaming-kulfi-8714c2.netlify.app/";
     default:
@@ -23,6 +27,10 @@ export const sourceLink = (work) => {
       return "https://github.com/Novarista13/weather-react-app";
     case "coffee review website":
       return "";
+    case "jewelry shop website":
+      return "https://github.com/Novarista13/jewelry_shop";
+    case "small erp system":
+      return "https://github.com/KaungMN/flavorwave_front";
     case "old portfolio":
       return "https://github.com/Novarista13/portfolio";
     default:
