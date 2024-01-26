@@ -3,7 +3,6 @@ import Text from "../decorations/TypeText";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import pdf from "../images/May Thit Htun.pdf";
 
 export default function Hero() {
   return (
@@ -21,7 +20,7 @@ export default function Hero() {
             <a
               className="nav-link mt-3"
               style={{ position: "absolute" }}
-              href={pdf}
+              href="/maythithtun.pdf"
               download="MayThitHtun.pdf"
             >
               <button className="work-modal-button">Download CV</button>
