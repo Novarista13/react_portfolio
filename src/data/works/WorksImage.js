@@ -9,6 +9,7 @@ import portfolioold from "../../images/works/portfolioold.png";
 import coffeeReview from "../../images/works/coffee-review.jpg";
 import jewelryShop from "../../images/works/jewelry-shop.png";
 import erpSystem from "../../images/works/erp-system.jpg";
+import bookRecommend from "../../images/works/book-recommend.png";
 
 export const worksImage = (work) => {
   const workID = work.toLowerCase();
@@ -23,6 +24,8 @@ export const worksImage = (work) => {
       return jewelryShop;
     case "small erp system":
       return erpSystem;
+    case "book recommendation website":
+      return bookRecommend;
     case "js weather website":
       return weatherold;
     case "react weather webiste":
@@ -35,5 +38,16 @@ export const worksImage = (work) => {
       return webpage;
     default:
       break;
+  }
+};
+export const worksVideo = (work) => {
+  const workID = work.toLowerCase();
+  switch (workID) {
+    case "jewelry shop website":
+      return "https://drive.google.com/file/d/1MK7GywRZZaX_DIBTevVVFPEMG5zgE4n5/preview";
+    case "small erp system":
+      return "https://drive.google.com/file/d/1n1FwwE3ctxL3h3IFKkqPsgCHEgvoxMfF/preview";
+    case "book recommendation website":
+      return "https://drive.google.com/file/d/1Hois0HGsxV5gMlMgv5XzfK-NvkyHTNbq/preview";
   }
 };

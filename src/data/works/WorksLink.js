@@ -1,4 +1,3 @@
-
 export const demoLink = (work) => {
   const workID = work.toLowerCase();
   switch (workID) {
@@ -12,12 +11,14 @@ export const demoLink = (work) => {
       return "";
     case "small erp system":
       return "";
+    case "book recommendation website":
+      return "";
     case "old portfolio":
       return "https://gleaming-kulfi-8714c2.netlify.app/";
     default:
       break;
   }
-}
+};
 export const sourceLink = (work) => {
   const workID = work.toLowerCase();
   switch (workID) {
@@ -26,14 +27,16 @@ export const sourceLink = (work) => {
     case "react weather webiste":
       return "https://github.com/Novarista13/weather-react-app";
     case "coffee review website":
-      return "";
+      return "https://github.com/Novarista13/coffee";
     case "jewelry shop website":
       return "https://github.com/Novarista13/jewelry_shop";
     case "small erp system":
       return "https://github.com/KaungMN/flavorwave_front";
+    case "book recommendation website":
+      return "https://github.com/Novarista13/book-recommend";
     case "old portfolio":
       return "https://github.com/Novarista13/portfolio";
     default:
       break;
   }
-}
+};
