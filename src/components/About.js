@@ -11,7 +11,6 @@ import { skillsImage } from "../data/Skills/SkillsImage";
 export default function About() {
   return (
     <>
-      {" "}
       <div id="about-section" style={{ margin: "100px", opacity: "0" }}>
         to make navlink does not go over the component
       </div>
@@ -53,18 +52,20 @@ export default function About() {
           <Col>
             <Card className="about-text">
               <Card.Body>
-                I'm May Thit Htun. A passionate Front-end React Developer based
-                in Yangon, Myanmar.
+                Hello! I'm May Thit Htun, a passionate Front-end React Developer
+                based in Yangon, Myanmar.
                 <br />
                 <br />
-                I'm currently seeking new opportunities in web development. I'm
-                open to work remotely and have flexible hours. I'm highly
-                skilled in JavaScript, React, HTML and CSS.
+                With a strong foundation in JavaScript, React, HTML, and CSS, I
+                thrive on creating dynamic and user-friendly web applications.
+                I'm currently seeking new opportunities in web development, and
+                I'm open to remote work with flexible hours. My goal is to bring
+                innovative ideas to life through code and deliver exceptional
+                user experiences.
                 <br />
                 <br />
-                Privately, in addtion to developing web applications, I like to
-                read books (I read mostly online). I love both fiction and
-                non-fiction.
+                Let's connect and explore how we can collaborate to create
+                something extraordinary!
               </Card.Body>
             </Card>
           </Col>

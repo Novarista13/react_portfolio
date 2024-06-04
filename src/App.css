@@ -228,6 +228,7 @@
 div .introduction {
   padding-left: 80px;
   padding-top: 50px;
+  z-index: 1;
 }
 
 .introduction-hi {
@@ -242,6 +243,10 @@ div .introduction {
 
 .my-name {
   color: #7eb5eb;
+}
+
+.my-name:hover {
+  text-shadow: 0 0 5px #7eb5eb;
 }
 
 .Typewriter {
@@ -275,10 +280,37 @@ div .hero-img {
 
 div .about-text {
   box-shadow: #11111a1a 0 4px 16px, #11111a1a 0 8px 24px, #11111a1a 0 16px 56px;
-  background-color: #1b1a2ea9;
-  backdrop-filter: blur(15px);
+  position: relative;
+  background-color: #181a27;
   color: white;
-  font-size: 1.3em;
+  border: 3px solid #7eb5eb;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+div .about-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #7eb5eb;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+div .about-text:hover::before {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px #7eb5eb;
+}
+
+div .about-text:hover {
+  box-shadow: 0 0 5px #7eb5eb;
+  text-shadow: 0 0 3px #7eb5eb;
 }
 
 .skill--box {
@@ -296,45 +328,117 @@ div .about-text {
 /* Work Section */
 
 div .work-title {
+  position: relative;
+  background-color: #181a27 !important;
+  border: 3px solid #7eb5eb;
   font-size: 1.8em !important;
   border-radius: 20px !important;
 }
 
+div .work-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #7eb5eb;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+div .work-title:hover::before {
+  transform: scale(1);
+  box-shadow: 0 0 15px #7eb5eb;
+}
+
+div .work-title:hover {
+  box-shadow: 0 0 5px #7eb5eb;
+  text-shadow: 0 0 5px #7eb5eb;
+}
+
 div .works {
-  box-shadow: #11111a1a 0 4px 16px, #11111a1a 0 8px 24px, #11111a1a 0 16px 56px;
-  background-color: #1b1a2ea9;
-  backdrop-filter: blur(15px);
+  background-color: transparent;
   color: white;
-  font-size: 1.3em;
-  border-radius: 30px;
   margin-bottom: 30px;
+}
+
+.work-image-border {
+  position: relative;
+  background-color: #181a27;
+}
+
+.work-image-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #7eb5eb;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+.work-image-border:hover::before {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px #7eb5eb;
+}
+
+.work-image-border:hover {
+  box-shadow: 0 0 5px #7eb5eb;
 }
 
 .work-image {
   padding: 10px;
-  border-radius: 30px;
+  height: 195px;
+  border-radius: 20px;
 }
 
 .miniworks {
+  border: 3px solid #7eb5eb !important;
+  border-radius: 20px !important;
   background: white !important;
   color: black !important;
-  padding: 20px;
+  padding: 15px;
+  margin: 15px 15px;
+}
+.miniworks::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #7eb5eb;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+.miniworks:hover::before {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px #7eb5eb;
+}
+
+.miniworks:hover {
+  box-shadow: 0 0 5px #7eb5eb;
 }
 
 .miniwork-image {
   margin-bottom: 5px;
-  border-radius: 25px;
-}
-
-@media (min-width: 992px) {
-  .miniwork-image {
-    height: 200px;
-  }
+  border-radius: 15px;
+  height: 150px;
 }
 
 @media (max-width: 768px) {
   .miniwork-image {
-    height: 250px;
+    height: 200px;
   }
 }
 
@@ -356,7 +460,7 @@ div .works {
 
 @media (max-width: 320px) {
   .modal-link-button {
-    margin: 5px!important;
+    margin: 5px !important;
   }
 }
 
@@ -396,7 +500,7 @@ button {
 .work-modal-button {
   display: block;
   margin: 10px auto;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* Contact Section */

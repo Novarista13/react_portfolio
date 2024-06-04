@@ -18,26 +18,36 @@ export default function Work() {
         <Card className="work-title works">
           <Card.Body>Projects</Card.Body>
         </Card>
-        <Row>
-          {worksData.map((work, id) => (
-            <Col lg={6} md={12} key={id}>
-              <Row>
-                <Col lg={8} style={{ margin: "0 auto" }} md={8}>
-                  <Card className="works">
-                    <img
-                      className="miniwork-image"
-                      src={worksImage(work)}
-                      alt={work}
-                      width="100%"
-                      height="100%"
-                    />
-                    <WorkModal work={work} />
-                  </Card>
-                </Col>
-              </Row>
-            </Col>
-          ))}
-        </Row>
+        <Container md>
+          <Row>
+            {worksData.map((work, id) => (
+              <Col lg={6} md={12} key={id}>
+                <Row>
+                  <Col style={{ margin: "0 auto" }} md={9}>
+                    <Card className="works">
+                      <div
+                        className="work-image-border"
+                        style={{
+                          border: "3px solid #7eb5eb",
+                          borderRadius: "20px",
+                        }}
+                      >
+                        <img
+                          className="work-image"
+                          src={worksImage(work)}
+                          alt={work}
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                      <WorkModal work={work} />
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
+            ))}
+          </Row>
+        </Container>
         <Card className="work-title works" style={{ marginTop: "100px" }}>
           <Card.Body>Mini Projects</Card.Body>
         </Card>
@@ -46,7 +56,7 @@ export default function Work() {
             <Col lg={6} md={12} key={id}>
               <Card className="works miniworks">
                 <Row>
-                  <Col lg={6} md={6}>
+                  <Col lg={6} md={6} style={{ margin: "0 auto" }}>
                     <img
                       className="miniwork-image"
                       src={worksImage(work)}
@@ -56,7 +66,9 @@ export default function Work() {
                     />
                   </Col>
                   <Col>
-                    <Card.Text>{worksText(work)}</Card.Text>
+                    <Card.Text style={{ margin: "5px auto" }}>
+                      {worksText(work)}
+                    </Card.Text>
                   </Col>
                 </Row>
               </Card>
