@@ -37,6 +37,7 @@ function WorkModal({ work }) {
             height="380"
             className="px-4 py-2"
             allow="autoplay"
+            title="work video"
           ></iframe>
         ) : (
           <img className="modal-image" src={worksImage(work)} alt={work} />

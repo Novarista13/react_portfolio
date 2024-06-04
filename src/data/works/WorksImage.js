@@ -49,5 +49,7 @@ export const worksVideo = (work) => {
       return "https://drive.google.com/file/d/1n1FwwE3ctxL3h3IFKkqPsgCHEgvoxMfF/preview";
     case "book recommendation website":
       return "https://drive.google.com/file/d/1Hois0HGsxV5gMlMgv5XzfK-NvkyHTNbq/preview";
+    default:
+      break;
   }
 };
