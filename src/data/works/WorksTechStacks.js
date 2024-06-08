@@ -1,38 +1,41 @@
-export const worksText = (work) => {
+export const worksTechStack = (work) => {
   const workID = work.toLowerCase();
   switch (workID) {
-    case "chocolate":
-      return [];
-
-    case "chocolatecard":
-      return [];
-
-    case "dashboard":
-      return [];
-
-    case "webpage":
-      return [];
-
     case "js weather website":
-      return [];
+      return ["HTML", "CSS", "Javascript", "Axios", "Bootstrap"];
 
     case "react weather webiste":
-      return [];
+      return ["Javascript", "React", "Axios", "Bootstrap"];
 
     case "old portfolio":
-      return [];
+      return ["HTML", "CSS", "Javascript", "Bootstrap"];
 
     case "coffee review website":
-      return [];
+      return ["Javascript", "React", "Bootstrap"];
 
     case "jewelry shop website":
-      return [];
+      return ["CSS", "Javascript", "React", "Bootstrap"];
 
     case "small erp system":
-      return [];
+      return ["Javascript", "React", "Axios", "Bootstrap"];
 
     case "book recommendation website":
-      return [];
+      return [
+        "Typescript",
+        "Next",
+        "Next Auth",
+        "Prisma",
+        "Zod",
+        "Tailwind",
+        "FlowbiteUI",
+      ];
+
+    case "small social media platform":
+      return ["Javascript", "React", "Axios", "Node", "MaterialUI"];
+
+    case "nextjs movie website":
+      return ["Javascript", "Next", "Tailwind"];
+
     default:
       break;
   }

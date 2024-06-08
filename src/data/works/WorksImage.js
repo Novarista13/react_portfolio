@@ -1,7 +1,6 @@
 import chocolate from "../../images/works/chocolate.jpg";
 import chocolatecard from "../../images/works/chocolatecard.jpg";
 import dashboard from "../../images/works/dashboard.png";
-// import usermanage from "../../images/works/usermanage.png";
 import weatherold from "../../images/works/weatherold.jpg";
 import weathernew from "../../images/works/weathernew.jpg";
 import webpage from "../../images/works/webpage.jpg";
@@ -10,6 +9,8 @@ import coffeeReview from "../../images/works/coffee-review.jpg";
 import jewelryShop from "../../images/works/jewelry-shop.png";
 import erpSystem from "../../images/works/erp-system.jpg";
 import bookRecommend from "../../images/works/book-recommend.png";
+import nextMovie from "../../images/works/next-movie.png";
+import social from "../../images/works/social.png";
 
 export const worksImage = (work) => {
   const workID = work.toLowerCase();
@@ -26,6 +27,10 @@ export const worksImage = (work) => {
       return erpSystem;
     case "book recommendation website":
       return bookRecommend;
+    case "small social media platform":
+      return social;
+    case "nextjs movie website":
+      return nextMovie;
     case "js weather website":
       return weatherold;
     case "react weather webiste":

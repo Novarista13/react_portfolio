@@ -18,7 +18,7 @@ export default function Work() {
         <Card className="work-title works">
           <Card.Body>Projects</Card.Body>
         </Card>
-        <Container md>
+        <Container>
           <Row>
             {worksData.map((work, id) => (
               <Col lg={6} md={12} key={id}>

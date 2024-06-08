@@ -10,30 +10,30 @@ export default function TextForm() {
     >
       <Form.Label className="form-title"> Contact me: </Form.Label>
       <Form.Control
-        className="form--input"
+        className="form-input"
         type="text"
-        required=""
+        required
         name="message"
         placeholder="Your name"
-        autoFocus=""
+        autoFocus
       />
       <Form.Control
-        className="form--input"
+        className="form-input"
         type="email"
-        required=""
+        required
         name="email"
         placeholder="Your email"
       />
       <Form.Control
-        className="form--input"
-        required=""
+        className="form-input"
+        required
         name="message"
         placeholder="Type your message"
         as="textarea"
         rows={7}
       />
       <div className="text-center">
-        <button type="submit" className="form-button">
+        <button type="submit" className="form-button work-modal-button">
           Send
         </button>
       </div>

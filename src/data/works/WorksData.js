@@ -1,7 +1,7 @@
 export const worksData = [
   "Book Recommendation Website",
-  // "Small Social Media Platform",
-  // "NextJS Movie Website",
+  "Small Social Media Platform",
+  "NextJS Movie Website",
   "Small ERP System",
   "Jewelry Shop Website",
   "Coffee Review Website",
@@ -11,7 +11,6 @@ export const worksData = [
 ];
 
 export const miniWorksData = [
-  // "NextJS Random Image Viewer",
   "ChocolateCard",
   "Chocolate",
   "WebPage",

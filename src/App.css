@@ -405,6 +405,7 @@ div .works {
   background: white !important;
   color: black !important;
   padding: 15px;
+  position: relative;
   margin: 15px 15px;
 }
 .miniworks::before {
@@ -455,7 +456,8 @@ div .works {
 }
 
 .modal-link-button {
-  margin: 0 10px;
+  display: inline !important;
+  margin: 0 10px !important;
 }
 
 @media (max-width: 320px) {
@@ -500,7 +502,69 @@ button {
 .work-modal-button {
   display: block;
   margin: 10px auto;
-  font-size: 15px;
+  font-size: 16px;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 2;
+  color: white !important;
+}
+
+.work-modal-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #7eb5eb;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+.work-modal-button:hover::before {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px #7eb5eb;
+}
+
+.work-modal-button:hover {
+  box-shadow: 0 0 5px #7eb5eb;
+}
+
+.modal-content {
+  border-radius: 20px !important;
+}
+
+.modal-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #7eb5eb;
+  z-index: -1;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+
+.modal-content:hover::before {
+  transform: scale(1.01);
+  box-shadow: 0 0 5px #7eb5eb;
+}
+
+.modal-content:hover {
+  box-shadow: 0 0 5px #7eb5eb;
+}
+
+.tech-stack-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 /* Contact Section */
@@ -513,7 +577,7 @@ button {
   font-size: 1.8em;
 }
 
-.form--input {
+.form-input {
   border-radius: 20px !important;
   margin-bottom: 20px;
 }
@@ -530,6 +594,7 @@ button {
   display: inline-block;
   position: relative;
   padding-inline-start: 0;
+  z-index: 2;
 }
 
 .social-icons {

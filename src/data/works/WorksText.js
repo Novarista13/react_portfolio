@@ -13,8 +13,11 @@ export const worksText = (work) => {
     case "webpage":
       return "By utilizing HTML for structuring and CSS for styling, I carefully curated accessibility across various devices.";
 
-    // case "usermanage":
-    //   return "By leveraging PHP's backend capabilities and MySQL's database management, I enabled seamless user registration, login, and data storage. Combining my proficiency in these technologies, I successfully brought my user management website to life, providing a seamless experience for managing and organizing user information.";
+    case "small social media platform":
+      return "During a course, I collaborated with my teacher to develop a clone of a popular social media platform, 'X'.\n\n This project involved creating a fully functional website where users can register accounts, post text updates, comment on others' posts, follow each other, and manage their profiles.\n\n A key feature of the platform is its real-time notification system, implemented using WebSockets.\n\n I developed the frontend using React, and the backend with Node.js and a MongoDB database. \n\nThis project not only honed my skills in frontend and backend development but also provided valuable experience in real-time data handling and user interaction management.\n\nContributors: Me & My Teacher";
+
+    case "nextjs movie website":
+      return "I collaborated with my teacher in a course to develop a comprehensive movie information website.\n\n This platform allows users to explore details about trending movies, browse movies by various categories, and search for specific movies.\n\n The frontend was built using Next.js, Tailwind CSS, and Radix UI, ensuring a seamless and visually appealing user experience. \n\nThis project helped me enhance my skills in modern web development technologies and provided valuable experience in creating user-friendly and responsive interfaces.\n\nContributors: Me & My Teacher";
 
     case "js weather website":
       return "Built a Vanilla JavaScript weather app in SheCodes Plus, an advanced 8-week JavaScript coding workshop.\n\nBuilding upon my previously-gained knowledge, I also became skilled in Bootstrap, API's, real-life development workflow, hosting, and advanced JavaScript.\n\n I combined all of these skills to create a fully-functioning weather app.\n\nContributors: Me";

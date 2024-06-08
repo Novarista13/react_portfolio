@@ -7,12 +7,7 @@ export const demoLink = (work) => {
       return "https://dashing-dolphin-5b27ce.netlify.app/";
     case "coffee review website":
       return "https://coffeenova-corner.netlify.app/home";
-    case "jewelry shop website":
-      return "";
-    case "small erp system":
-      return "";
-    case "book recommendation website":
-      return "";
+    
     case "old portfolio":
       return "https://gleaming-kulfi-8714c2.netlify.app/";
     default:
@@ -36,6 +31,10 @@ export const sourceLink = (work) => {
       return "https://github.com/Novarista13/book-recommend";
     case "old portfolio":
       return "https://github.com/Novarista13/portfolio";
+    case "small social media platform":
+      return "https://github.com/Novarista13/rsd24/tree/main/x-app";
+    case "nextjs movie website":
+      return "https://github.com/Novarista13/rsd24/tree/main/next-movie";
     default:
       break;
   }
