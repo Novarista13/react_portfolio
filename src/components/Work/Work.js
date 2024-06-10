@@ -3,9 +3,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import { miniWorksData, worksData } from "../data/works/WorksData";
-import { worksImage } from "../data/works/WorksImage";
-import { worksText } from "../data/works/WorksText";
+import { miniWorksData, worksData } from "../../data/works/WorksData";
+import { worksImage } from "../../data/works/WorksImage";
+import { worksText } from "../../data/works/WorksText";
 import WorkModal from "./WorkModal";
 
 export default function Work() {

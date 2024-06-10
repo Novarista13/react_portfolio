@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { worksImage } from "../data/works/WorksImage";
-import { worksVideo } from "../data/works/WorksImage";
-import { worksText } from "../data/works/WorksText";
-import { demoLink } from "../data/works/WorksLink";
-import { sourceLink } from "../data/works/WorksLink";
-import { skillsImage } from "../data/Skills/SkillsImage";
-import { worksTechStack } from "../data/works/WorksTechStacks";
+import { worksImage } from "../../data/works/WorksImage";
+import { worksVideo } from "../../data/works/WorksImage";
+import { worksText } from "../../data/works/WorksText";
+import { demoLink } from "../../data/works/WorksLink";
+import { sourceLink } from "../../data/works/WorksLink";
+import { skillsImage } from "../../data/Skills/SkillsImage";
+import { worksTechStack } from "../../data/works/WorksTechStacks";
 
 function WorkModal({ work }) {
   const [show, setShow] = useState(false);

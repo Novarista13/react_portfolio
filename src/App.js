@@ -1,11 +1,17 @@
-import { useState, useEffect } from "react";
-import "./App.css";
-import Footer from "./components/Footer";
-import Preloader from "./decorations/Preloader";
+import { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { Routes, Route } from "react-router-dom";
-import PDFViewer from "./components/PDFViewer";
-import Home from "./pages/Home";
+
+import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Socials from "./components/Footer/Socials";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import Work from "./components/Work/Work";
+import ParticlesComponent from "./decorations/Particle";
+import Canvas from "./decorations/pointer_effect/Pointer";
+import Preloader from "./decorations/Preloader";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -23,11 +29,15 @@ function App() {
       <Preloader load={load} />
       <div className="app" id={load ? "not-scroll" : "scroll"}>
         {scroll.scrollToTop()}
-       
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path=":pdfName" element={<PDFViewer />} />
-        </Routes>
+
+        <ParticlesComponent />
+        <Canvas />
+        <Nav />
+        <Hero />
+        <About />
+        <Work />
+        <Contact />
+        <Socials />
         <Footer />
       </div>
     </>
