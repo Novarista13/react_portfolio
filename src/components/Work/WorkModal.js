@@ -39,6 +39,7 @@ function WorkModal({ work }) {
             height="250px"
             className="px-4 py-2"
             allow="autoplay"
+            as="video"
             title="work video"
           ></iframe>
         ) : (

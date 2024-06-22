@@ -258,6 +258,11 @@ div .hero-img {
 }
 
 @media (max-width: 520px) {
+  div .introduction {
+    padding-left: 70px;
+    padding-top: 0;
+    z-index: 1;
+  }
   .introduction-hi {
     font-size: 2.2em;
   }
@@ -446,8 +451,9 @@ div .works {
 /* Modal Section */
 
 .modal-image {
-  width: unset;
+  width: auto;
   border-radius: 25px;
+  margin: 15px;
 }
 
 .modal-footer {
@@ -565,6 +571,7 @@ button {
   gap: 10px;
   margin: 10px 0;
   margin-bottom: 20px;
+  overflow: scroll;
 }
 
 /* Contact Section */

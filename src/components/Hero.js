@@ -19,7 +19,7 @@ export default function Hero() {
             <Text />
             <a
               className="nav-link mt-3"
-              style={{ position: "absolute" }}
+              style={{ width: "fit-content" }}
               href="/maythithtun.pdf"
               download="MayThitHtun.pdf"
             >
